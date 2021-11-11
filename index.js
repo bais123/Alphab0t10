@@ -179,7 +179,7 @@ banChats = setting.self_mode
 autorespon = false
 offline = false
 readGc = true 
-readPc = false 
+readPc = true 
 antitrol = true 
 bugc = true
 autovn = true
@@ -2190,7 +2190,7 @@ let papako = [{
 										},{
 										"buttonId": `me`,
 										"buttonText": {
-											"displayText": "PROCFILE"
+											"displayText": "PROFILE"
 											},
 										"type": "RESPONSE"
 										}]
