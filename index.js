@@ -187,7 +187,7 @@ autoketik = false
 autoregister = setting.user_register
 
 img = setting.img
-baper = 'SUPPORT BAIS BOT'
+baper = 'Support 𝙱𝙰𝙸𝚂•𝙱𝙾𝚃𝚉'
 apiku = 'https://youtu.be/2rWbjrDIAyA'
 gc_wa_lu = 'https://chat.whatsapp.com/LYUQUwuZOwiGZDw2GbT3rj' //klo gk punya gc wa gk usah di ganti 👍
 targetpc = setting.ownerNumberr
@@ -2936,7 +2936,7 @@ case 'setdesc':
 					if (!isGroupAdmins) return reply(lang.onlygcAdmin())
 					if (!isBotGroupAdmins) return reply('```Saya Bukan Admin```')
 					alpha.groupUpdateDescription(from, `${body.slice(9)}`)
-					alpha.sendMessage(from, '*「  SUKSES  」Mengubah Desk Grup', text, { quoted: fdoc })
+					alpha.sendMessage(from, '*「  SUKSES  」Mengubah Deskripsi Grup', text, { quoted: fdoc })
 					break   
 case 'spam':
 if (!isGroup) return reply(lang.onlygc())
@@ -3036,14 +3036,14 @@ case 'bcgif':
 					const vname = alpha.contacts[i] != undefined ? alpha.contacts[i].vname || alpha.contacts[i].notify : undefined
 					ini_list.push({
 					"displayName": 'Owner Alphabot',
-					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${alpha.user.name}`}\nORG: SUBSCRIBE ZEEONE OFC;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${alpha.user.name}`}\nORG: Support 𝙱𝙰𝙸𝚂•𝙱𝙾𝚃𝚉;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 					})
 					}
 					hehe = await alpha.sendMessage(from, {
 					"displayName": `${ini_list.length} kontak`,
 					"contacts": ini_list 
 					}, 'contactsArrayMessage', { quoted: fkontak})
-					var ini_gopayy =`Halo @${sender.split("@")[0]} itu owner ku, jangan lupa donasi kak😇`
+					var ini_gopayy =`Halo @${sender.split("@")[0]} itu owner ku kak :)`
 var buttonss = [
 {buttonId: 'donasi_kak', buttonText:{displayText: 'DONASI'}, type: 1},
 {buttonId: 'sewa_kak', buttonText:{displayText: 'SEWA'}, type: 1}
@@ -3256,7 +3256,7 @@ break
 		            await alpha.deleteMessage(jids, { id: responye.messageID, remoteJid: jids, fromMe: true })
 		            break
 		    case 'tomp3':
-		            if (!isQuotedVideo) return fakegroup('```Reply videonya!```')
+		            if (!isQuotedVideo) return fakegroup('```REPLY VIDEONYA !!!```')
 		            fakegroup(mess.wait)
 		            let encmedia2 = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
 		            let media2 = await alpha.downloadAndSaveMediaMessage(encmedia2)
@@ -3367,8 +3367,8 @@ case 'setexif':
 		            encmedia_ = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 				    media_ = await alpha.downloadAndSaveMediaMessage(encmedia_)
 		            anu = args.join(' ').split('|')
-		            satu = anu[0] !== '' ? anu[0] : `SUBSCRIBE`
-		            dua = typeof anu[1] !== 'undefined' ? anu[1] : `ZEEONE OFC`
+		            satu = anu[0] !== '' ? anu[0] : `Support`
+		            dua = typeof anu[1] !== 'undefined' ? anu[1] : `𝙱𝙰𝙸𝚂•𝙱𝙾𝚃𝚉`
 		            require('./lib/fetcher.js').createExif(satu, dua)
 					require('./lib/fetcher.js').modStick(media_ , alpha, mek, from)
 					break
@@ -3430,7 +3430,7 @@ case 'setexif':
 		            .toFormat('webp')
 		            .save(out)       
 		            } else {
-		            fakestatus(`Kirim gambar dengan caption ${prefix}swm teks|teks atau tag gambar yang sudah dikirim`)
+		            fakestatus(`Kirim gambar dengan caption ${prefix}swm teks|teks atau reply gambar yang sudah anda dikirim`)
 		            }
 		            break
 		    case 'upswteks':
@@ -3448,7 +3448,7 @@ case 'setexif':
 		            bur = `Sukses Upload Story Image dengan Caption: ${q}`
 		            alpha.sendMessage(from, bur, text, { quoted: mek })
 		            } else {
-		            fakegroup('```Reply gambarnya!```')
+		            fakegroup('```REPLY GAMBARNYA !!!```')
 		            }
 		            break
 		    case 'upswvideo':
@@ -3460,7 +3460,7 @@ case 'setexif':
 		            bur = `Sukses Upload Story Video dengan Caption: ${q}`
 		            alpha.sendMessage(from, bur, text, { quoted: mek })
 		            } else {
-		            fakegroup('```Reply videonya!```')
+		            fakegroup('```REPLY VIDEONYA !!!```')
 		            }
 		            break
 		    case 'fdeface':
@@ -3705,7 +3705,7 @@ break
                             })
                             exec(`ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${ranw}`, (err) => {
                                 fs.unlinkSync(ranp)
-                                if (err) return reply('emror bang')
+                                if (err) return reply('Maaf sistemnya lagi error')
                                 alpha.sendMessage(from, fs.readFileSync(ranw), sticker, { quoted: mek })
                                     fs.unlinkSync(ranw)
                                 })
@@ -3715,16 +3715,16 @@ break
                     }
                     break
 		    case 'toimg':
-		if (!isQuotedSticker) return reply('Reply stc nya!')
+		if (!isQuotedSticker) return reply('Reply stiker yang ingin dijadikan image !!!')
 					reply(lang.wait())
 					encmediaa = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 					mediaa = await alpha.downloadAndSaveMediaMessage(encmediaa)
 					ran = getRandom('.png')
 					exec(`ffmpeg -i ${mediaa} ${ran}`, (err) => {
 					fs.unlinkSync(mediaa)
-					if (err) return reply('Yah gagal, coba ulangi ^_^')
+					if (err) return reply('Yah gagal, coba ulangi lagi ^_^')
 					buffer = fs.readFileSync(ran)
-					fakethumb(buffer,'```Nih kak, jgn lupa Support YT : ZEEONE OFC```')
+					fakethumb(buffer,'```Nih kak, jangan lupa Support 𝙱𝙰𝙸𝚂•𝙱𝙾𝚃𝚉```')
 					fs.unlinkSync(ran)
 					})
 					break
@@ -3938,7 +3938,7 @@ case 'linkwa':
 case 'grupwa':
 case 'groupwa':
 case 'gcwa':
-            if(!q) return reply('cari group apa?')
+            if(!q) return reply('Mau cari grup apa kak ?')
             hx.linkwa(q)
             .then(result => {
             let res = '「 *GC WA* 」\n\n'
@@ -3949,12 +3949,12 @@ case 'gcwa':
             });
             break 
 case 'lirik':
-            if(!q) return reply('lagu apa?')
+            if(!q) return reply('Mau cari lagu apa ?')
             let song = await hx.lirik(q)
             sendMediaURL(from,song.thumb,song.lirik)
             break
     case 'otaku':
-            if(!q) return reply('judul animenya?')
+            if(!q) return reply('Judul animenya mana ?')
             let anime = await hx.otakudesu(q)
             rem = `*Judul* : ${anime.judul}
 *Jepang* : ${anime.jepang}
@@ -4000,7 +4000,7 @@ ${anime.desc}\n\n*Link Batch* : ${anime.batch}\n*Link Download SD* : ${anime.bat
 		            hen = args[0]
 		            if (!q) return fakestatus('Masukan link group')
 		            var codeInvite = hen.split('https://chat.whatsapp.com/')[1]
-		            if (!codeInvite) return fakegroup ('pastikan link sudah benar!')
+		            if (!codeInvite) return fakegroup ('Pastikan link yang diberikan sudah benar !!')
 		            var response = await alpha.acceptInvite(codeInvite)
 		            fakestatus('```SUKSES JOIN GRUP```')
 		            } catch {
@@ -4008,7 +4008,7 @@ ${anime.desc}\n\n*Link Batch* : ${anime.batch}\n*Link Download SD* : ${anime.bat
 		            }
 		            break
 		    case 'twmp4': case 'twitter':
-if (args.length < 1) return reply('Link?')
+if (args.length < 1) return reply('Linknya mana ?')
 lin = args[0]
 reply(lang.wait())
 hx.twitter(lin).then(res => {
@@ -4020,7 +4020,7 @@ sendMediaURL(from, Anu, 'Done!')
 })
 break
 case 'twmp3':
-if (args.length < 1) return reply('Link?')
+if (args.length < 1) return reply('Linknya mana ?')
 lin = args[0]
 reply(lang.wait())
 hx.twitter(lin).then(async (res) => {
@@ -4199,13 +4199,13 @@ break
   
 			/* case 'add':  
                     if (!isGroup && !isGroupAdmins && !isBotGroupAdmins) return reply(lang.botNotAdm())
-                if (args.length < 1) return reply('Yang mau di add?')
-					if (args[0].startsWith('08')) return reply('Gunakan kode negara mas')
+                if (args.length < 1) return reply('Yang mau di add siapa ?')
+					if (args[0].startsWith('08')) return reply('Gunakan kode negara kak !!!')
 					orang = args[0] + '@s.whatsapp.net'
 response = await alpha.groupAdd(from, [orang])
 o = response.participants[0]
 let inv = (Object.values(o))
-if(inv[0].code == 409) return reply('Orang yang anda add sudah ada didalam Group!')
+if(inv[0].code == 409) return reply('Orang yang anda add sudah ada didalam Group !!')
 else if(inv[0].code == 403){
 alpha.sendMessage(from, `User private\n\nMengirim Undangan Group Ke @${q.split('@')[0]}`, MessageType.text, {quoted: mek, contextInfo: {mentionedJid: [orang]}})
 alpha.sendMessage(from, orang, inv[0].invite_code, inv[0].invite_code_exp, groupMetadata.subject , `Salah Satu Admin Mengundang Anda Masuk Ke Sini Silahkan Klik Bergabung Untuk Masuk`)
@@ -4252,14 +4252,14 @@ break*/
             {
               buttonId: 'antilink on',
               buttonText: {
-                displayText: `On`,
+                displayText: `ON`,
               },
               type: 1,
             },
             {
               buttonId: 'antilink off',
               buttonText: {
-                displayText: `Off`,
+                displayText: `OFF`,
               },
               type: 1,
             },
@@ -4283,14 +4283,14 @@ break*/
             {
               buttonId: 'event on',
               buttonText: {
-                displayText: `On`,
+                displayText: `ON`,
               },
               type: 1,
             },
             {
               buttonId: 'event off',
               buttonText: {
-                displayText: `Off`,
+                displayText: `OFF`,
               },
               type: 1,
             },
@@ -4316,14 +4316,14 @@ break*/
             {
               buttonId: 'antivirtex on',
               buttonText: {
-                displayText: `On`,
+                displayText: `ON`,
               },
               type: 1,
             },
             {
               buttonId: 'antivirtex off',
               buttonText: {
-                displayText: `Off`,
+                displayText: `OFF`,
               },
               type: 1,
             },
@@ -4342,11 +4342,11 @@ break*/
 					mentions(teks, mentionedd, true)
 					alpha.groupRemove(from, mentionedd)
 					} else {
-					reply('Tag orang yang mau di kick')
+					reply('Tag orang yang mau di kick !!')
 					}
                 break
 			case 'admin':
-					if (!isGroup) return fakestatus('```KHUSUS GRUP BRO```')
+					if (!isGroup) return fakestatus('```KHUSUS GRUP KAK```')
 					teks = `*DAFTAR ATASAN GROUP* _${groupMetadata.subject}_\n*TOTAL* : ${groupAdmins.length}\n\n`
 					no = 0
 					for (let admon of groupAdmins) {
@@ -4358,7 +4358,7 @@ break*/
 			
 			case 'tagall':
 			if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
-			        if (!isGroupAdmins && !isBotGroupAdmins) return reply("Khusus admin");
+			        if (!isGroupAdmins && !isBotGroupAdmins) return reply("Perintah ini khusus admin group");
 					members_id = []
 					teks = (args.length > 1) ? body.slice(8).trim() : ''
 					teks += '\n\n'
@@ -5499,7 +5499,7 @@ reply(`Succes mematikan autoread pc`)
 reply(`Pilih on atau off`)
 }
 } else {
-reply(`*List Auto Read*\n•> gc\n•> pc`)
+reply(`*List Auto Read*\n•> Group Chat\n•> Private Chat`)
 }
 break
 case 'nsfw':
@@ -5520,14 +5520,14 @@ case 'nsfw':
             {
               buttonId: 'nsfw on',
               buttonText: {
-                displayText: `On`,
+                displayText: `ON`,
               },
               type: 1,
             },
             {
               buttonId: 'nsfw off',
               buttonText: {
-                displayText: `Off`,
+                displayText: `OFF`,
               },
               type: 1,
             },
@@ -5551,14 +5551,14 @@ case 'antibug':
             {
               buttonId: 'antibug on',
               buttonText: {
-                displayText: `On`,
+                displayText: `ON`,
               },
               type: 1,
             },
             {
               buttonId: 'antibug off',
               buttonText: {
-                displayText: `Off`,
+                displayText: `OFF`,
               },
               type: 1,
             },
@@ -5580,14 +5580,14 @@ reply(lang.anjawaOff(command))
             {
               buttonId: 'antidelete on',
               buttonText: {
-                displayText: `On`,
+                displayText: `ON`,
               },
               type: 1,
             },
             {
               buttonId: 'antidelete off',
               buttonText: {
-                displayText: `Off`,
+                displayText: `OFF`,
               },
               type: 1,
             },
@@ -5624,14 +5624,14 @@ reply(lang.anjawaOff(command))
             {
               buttonId: 'autoketik on',
               buttonText: {
-                displayText: `On`,
+                displayText: `ON`,
               },
               type: 1,
             },
             {
               buttonId: 'autoketik off',
               buttonText: {
-                displayText: `Off`,
+                displayText: `OFF`,
               },
               type: 1,
             },
