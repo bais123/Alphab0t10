@@ -13,10 +13,10 @@ return `「 *PRICE LIST* 」
 
 ⬣ PRICE JADIBOT
 
-⬡ JADI BOT PERMANEN 25K
+⬡ JADI BOT PERMANEN 25K (Pakai Source Code ini)
 
 
-⬣ MINAT? PM
+⬣ MINAT ? PM
 ⬡ wa.me/6285235099466
 
 

@@ -1,27 +1,23 @@
 const allpayment = (prefix) => {
-return `PAYMENT BY ZEEONE OFC
-
-*さ BANK*
-1. BRI 
-	ㅁ 5074-01-003141-52-8
-		• R***A*DI
-		
+return `PAYMENT BY 𝙱𝙰𝙸𝚂•𝙱𝙾𝚃𝚉
+
 *さ E-MONEY*
 1. GOPAY
-	ㅁ 0887 4350 47326
-		• ZE**** **C
+	ㅁ 0821 4659 4443
+		• BAIS
 2. OVO
-	ㅁ 0887 4350 47326
-		• EL*****TI
+	ㅁ 0821 4659 4443
+		• HERA****
 3. DANA
-	ㅁ 0887 4350 47326
-		• ZE**** **C
+	ㅁ 0821 4659 4443
+		• HERA****
 
 *さ PULSA*
 
-Tidak tersedia
+TELKOMSEL
+    ㅁ 0821 4659 4443
 	
-Sebelum melakukan pembayaran ada baiknya anda menghubungi owner terlebih dahulu!
+Sebelum melakukan pembayaran, sebaiknya anda menghubungi owner terlebih dahulu !!
 `
 	}
 
